@@ -1,2 +1,2 @@
-# auto-raiting
-DACON personal project: review classification
+# Auto Rating
+- DACON personal project: review classification
