@@ -1,4 +1,4 @@
-# Auto Rating
+# [쇼핑몰 리뷰 평점 분류 경진대회](https://dacon.io/competitions/official/235938/codeshare/5932)
 - [Introduction](#introduction)
 - [Data](#data)
 - [EDA](#eda)
