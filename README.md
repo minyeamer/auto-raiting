@@ -5,7 +5,6 @@
 - [Data Augmentation](#data-augmentation)
 - [Experiments](#experiments)
 - [Conclusion](#conclusion)
-- [Discussion](#discussion)
 - [Post-Project](#post-project)
 
 ---
