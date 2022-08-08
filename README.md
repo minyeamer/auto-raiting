@@ -18,7 +18,8 @@
 다중 분류 작업을 수행하는 언어 모델을 학습시킨 결과를 비교할 계획으로 프로젝트 진행
 - 평점 별 불균형이 존재해 F1-Score로 평가하는 것이 이상적이라 판단하지만,   
 대회의 판단 기준에 맞게 Accuracy를 활용하고, 전체 테스트 데이터 중 50%에 대한 점수를 지표로 활용
-- 현재 Public Score 기준 `0.70104` 점으로 4순위에 위치
+- Fine-tuning된 KoELECTRA 및 RoBERTa 모델에 대한 예측 결과를 hard-voting하여   
+accuracy 기준 `0.7116` 점으로 550팀 중 2위에 위치
 
 ---
 
@@ -130,8 +131,11 @@ KoELECTRA 모델 중 가장 성능이 높은 jaehyeong 모델을 기준으로 �
 데이터 전처리부터 다시 수행하는 것과 모델링을 개선하는 것을 병행할만한 여유가 없다고 판단해   
 더이상의 데이터 변환 없이 다음 단계인 앙상블로 전환
 
-### Ensemble (Soft-Voting)
-- 
+### Ensemble
+- KoELECTRA, RoBERTa 모델과 다양한 종류의 데이터를 활용해 예측한 결과를 통해   
+hard-voting 및 soft-voting 수행
+- 원본 데이터를 활용해 학습한 KoELECTRA, RoBERTa 모델의 예측값에 hard-voting을 적용한   
+결과가 가장 높은 점수를 보였으며, soft-voting은 상대적으로 낮은 점수를 보임
 
 ---
 
